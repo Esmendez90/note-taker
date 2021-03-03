@@ -109,6 +109,9 @@ const renderNoteList = (notes) => {
 
   // Returns jquery object for li with given text and delete button
   // unless withDeleteButton argument is provided as false
+  // for  (var i = 0; i < notes.length; i++) {
+  //   console.log(notes[i]);
+  // }
   const create$li = (text, withDeleteButton = true) => {
     const $li = $("<li class='list-group-item'>");
     const $span = $("<span>").text(text);
