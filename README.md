@@ -22,9 +22,9 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 ## Description
 
-1 .Application should allow users to create and save notes.
-2. Application should allow users to view previously saved notes.
-3. Application should allow users to delete previously saved notes.
+* Application should allow users to create and save notes.
+* Application should allow users to view previously saved notes.
+* Application should allow users to delete previously saved notes.
 
 ## Requirements
 
