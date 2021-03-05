@@ -11,10 +11,10 @@ As a user, I want to be able to write and save notes. I want to be able to delet
 * [Motivation](#motivation)
 * [Description](#description)
 * [Requirements](#requirements)
-* [Screenshots](#screenshots)
-* [Link to Page](#link-to-page)
-* [Tools](#tools)
 * [License](#License)
+* [Screenshots](#screenshots)
+* [Link to Heroku](#link-to-Heroku)
+* [Tools](#tools)
 
 ## Motivation
 
@@ -47,48 +47,23 @@ This is an application that can be used to write, save, and delete notes. This a
 * Must contain your personalized information. (bio, name, images, links to social media, etc.)
 * Must properly utilize Bootstrap components and grid system.
 
+## License
+
+MIT
+
 ## Screenshots
 
-<img src="assets/images/homepic.png" alt="Home/About screenshot" width="50%" height="55%">
+<img src="public/images/homepage.png" alt="Note taker homepage" width="50%" height="55%">
 
-<img src="assets/images/portfoliopic.png" alt="Portfolio screenshot" width="50%" height="55%">
+<img src="public/images/notes.png" alt="Notes page" width="50%" height="55%">
 
-<img src="assets/images/contactpic.png" alt="Contact Me screenshot" width="50%" height="55%">
+## Link to Heroku
 
-## Link to Page
-
-<https://esmendez90.github.io/>
+<https://rocky-temple-72161.herokuapp.com/>
 
 ## Tools
 
 * Visual Studio Code <https://code.visualstudio.com>
 * Create a package using npm init -y
 * Instal express package <https://www.npmjs.com/package/express>
-
-
-## License
-
-MIT
-
- 
-=========
-
-
-
-## Deploying the App
-
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
-
-- - -
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* Deploy application in heroku <https://signup.heroku.com/>
