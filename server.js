@@ -6,7 +6,8 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 8080;
+// Tell heroku to deploy it any open port OR 8080
+const PORT = process.env.PORT || 8080;
 
 // Middleware route
 app.use(express.urlencoded({ extended: true }));
