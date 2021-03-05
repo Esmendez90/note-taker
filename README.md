@@ -22,6 +22,12 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 ## Description
 
+Application should allow users to create and save notes.
+Application should allow users to view previously saved notes.
+Application should allow users to delete previously saved notes.
+
+## Requirements
+
 This is an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 * The following HTML routes should be created:
@@ -35,17 +41,6 @@ This is an application that can be used to write, save, and delete notes. This a
   * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 
 * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-## Requirements 
-
-* Functional, deployed application.
-* Navbar must be consistent on each page.
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
-* All links must work.
-* Must use semantic html.
-* Each page must have valid and correct HTML. (use a validation service)
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
-* Must properly utilize Bootstrap components and grid system.
 
 ## License
 
@@ -65,5 +60,6 @@ MIT
 
 * Visual Studio Code <https://code.visualstudio.com>
 * Create a package using npm init -y
-* Instal express package <https://www.npmjs.com/package/express>
+* Install express package <https://www.npmjs.com/package/express>
+* Install file system package <https://www.npmjs.com/package/file-system>
 * Deploy application in heroku <https://signup.heroku.com/>
