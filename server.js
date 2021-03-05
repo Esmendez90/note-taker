@@ -20,7 +20,7 @@ app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 
-// =========== API Requests ============
+// =========== API Routes ============
 // Below code handles when users "visit" a page.
 // In each of the below cases when a user visits a link
 // they are shown a JSON of the data in the table
@@ -52,9 +52,26 @@ app.post("/api/notes", (req, res) => {
 });
 
 // DELETE route
-
-
-
+app.delete("/api/notes/:id", (req, res) => {
+  let deleteId = req.params.id;
+  fs.readFile("./db/db.json", function (err, data) {
+    if (err) {
+      throw err;
+    } else {
+      let notes = JSON.parse(data);
+      notes.forEach((note) => {
+        if (deleteId == note.id) {
+          let currentIndex = notes.indexOf(note);
+          notes.splice(currentIndex, 1);
+          fs.writeFile("./db/db.json", JSON.stringify(notes), function (err) {
+            if (err) throw err;
+            res.json(notes);
+          });
+        }
+      });
+    }
+  });
+});
 
 // ==========================================
 
